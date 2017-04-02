@@ -1,0 +1,6 @@
+{
+  "srvcId" : "login-module",
+  "descriptor" : {
+    "exec" : "java -jar ../mod-auth/login_module/target/login-module-fat.jar -Dhttp.port=%p embed_postgres=true"
+  }
+}

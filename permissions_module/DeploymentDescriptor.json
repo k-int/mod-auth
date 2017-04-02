@@ -1,0 +1,6 @@
+{
+  "srvcId" : "permissions-module",
+  "descriptor" : {
+    "exec" : "java -jar ../mod-auth/permissions_module/target/permissions-module-fat.jar -Dhttp.port=%p embed_postgres=true"
+  }
+}

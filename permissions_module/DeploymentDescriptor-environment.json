@@ -1,0 +1,11 @@
+{
+  "srvcId" : "permissions-module",
+  "descriptor" : {
+    "exec" : "java -jar ../mod-auth/permissions_module/target/permissions-module-fat.jar -Dhttp.port=%p",
+    "env": [
+      { "name" : "db.username", "value" : "auth_demo_admin" },
+      { "name" : "db.password", "value" : "admin" },
+      { "name" : "db.database", "value" : "auth_demo" }
+    ]
+  }
+}

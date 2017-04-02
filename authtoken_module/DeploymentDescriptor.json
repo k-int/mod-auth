@@ -1,0 +1,6 @@
+{
+  "srvcId" : "authtoken-module",
+  "descriptor" : {
+    "exec" : "java -Dport=%p -jar ../mod-auth/authtoken_module/target/authtoken_module-fat.jar"
+  }
+}
