@@ -1,0 +1,9 @@
+{
+  "username": "admin",
+  "permissions": ["loan-storage.loans.collection.get",
+    "loan-storage.loans.item.get",
+    "loan-storage.loans.item.post",
+    "loan-storage.loans.item.put",
+    "loan-storage.loans.item.delete",
+    "loan-storage.loans.collection.delete"]
+}
