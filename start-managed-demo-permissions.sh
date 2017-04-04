@@ -15,13 +15,6 @@ create_environment_variable() {
      "${okapi_proxy_address}/_/env"
 }
 
-echo "Building Auth Token Module"
-cd authtoken_module
-
-mvn package -q -Dmaven.test.skip=true || exit 1
-
-cd ..
-
 echo "Building Permissions Module"
 cd permissions_module
 
@@ -94,15 +87,3 @@ else
   echo "Unknown storage mechanism: ${storage}"
   exit 1
 fi
-
-./create-admin-user.sh
-
-echo "Running Auth Token module"
-cd authtoken_module
-
-../okapi-registration/managed-deployment/register.sh \
-  ${okapi_proxy_address} \
-  ${tenant_id} \
-  DeploymentDescriptor.json
-
-cd ..
