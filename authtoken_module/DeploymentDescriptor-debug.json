@@ -1,0 +1,6 @@
+{
+  "srvcId" : "authtoken-module",
+  "descriptor" : {
+    "exec" : "java -Dlog.level=debug -Dvertx.logger-delegate-factory-class-name=io.vertx.core.logging.SLF4JLogDelegateFactory -Dport=%p -Djwt.signing.key=CorrectBatteryHorseStaple -jar ../mod-auth/authtoken_module/target/authtoken_module-fat.jar"
+  }
+}
