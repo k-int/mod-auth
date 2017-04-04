@@ -12,5 +12,6 @@ cd database-setup
 
 # Drop the tenant based role as well, because deactivation no longer calls the Tenant API
 ./drop-role.sh demo_tenant_login_module
+./drop-role.sh demo_tenant_permissions_module
 
 cd ..
