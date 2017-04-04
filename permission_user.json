@@ -1,4 +1,4 @@
 {
   "username": "admin",
-  "permissions": ["loan-storage.all"]
+  "permissions": ["loan-storage.all", "circulation.all"]
 }
