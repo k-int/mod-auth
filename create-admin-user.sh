@@ -20,5 +20,5 @@ permissions_user_json=$(cat ./permission_user.json)
 curl -w '\n' -X POST -D - \
      -H "Content-type: application/json" \
      -H "X-Okapi-Tenant: ${tenant_id}" \
-     -d "${credentials_json}" \
+     -d "${permissions_user_json}" \
      http://localhost:9130/perms/users
